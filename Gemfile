@@ -21,6 +21,7 @@ gem "font-awesome-rails"
 gem "paperclip", git: "git://github.com/thoughtbot/paperclip.git"
 gem 'activeadmin'
 gem 'devise'
+gem 'toastr-rails'
 
 group :development, :test do
   gem 'byebug', platforms: [:mri, :mingw, :x64_mingw]
