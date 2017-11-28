@@ -64,35 +64,10 @@ ActiveRecord::Schema.define(version: 20171128100055) do
     t.string "country"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
-  create_table "product_items", force: :cascade do |t|
-    t.integer "product_id"
-    t.integer "cart_id"
-    t.datetime "created_at", null: false
-    t.datetime "updated_at", null: false
-    t.index ["cart_id"], name: "index_product_items_on_cart_id"
-    t.index ["product_id"], name: "index_product_items_on_product_id"
-
-  create_table "new_tables", force: :cascade do |t|
-    t.string "name"
-    t.string "password"
-    t.datetime "created_at", null: false
-    t.datetime "updated_at", null: false
-  end
-
-  create_table "orders", force: :cascade do |t|
-    t.string "name"
-    t.string "email"
-    t.text "address"
-    t.string "city"
-    t.string "province"
-    t.string "country"
-    t.datetime "created_at", null: false
-    t.datetime "updated_at", null: false
   end
 
 # Could not dump table "product_items" because of following StandardError
 #   Unknown type 'reference' for column 'order'
-
   create_table "products", force: :cascade do |t|
     t.string "title"
     t.string "image"
