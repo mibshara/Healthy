@@ -10,7 +10,11 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
+<<<<<<< HEAD
 ActiveRecord::Schema.define(version: 20171128100055) do
+=======
+ActiveRecord::Schema.define(version: 20171128090955) do
+>>>>>>> parent of 2ee226e... Revert "added product relationships with product items"
 
   create_table "active_admin_comments", force: :cascade do |t|
     t.string "namespace"
@@ -48,6 +52,7 @@ ActiveRecord::Schema.define(version: 20171128100055) do
     t.datetime "updated_at", null: false
   end
 
+<<<<<<< HEAD
   create_table "new_tables", force: :cascade do |t|
     t.string "name"
     t.string "password"
@@ -64,6 +69,15 @@ ActiveRecord::Schema.define(version: 20171128100055) do
     t.string "country"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
+=======
+  create_table "product_items", force: :cascade do |t|
+    t.integer "product_id"
+    t.integer "cart_id"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+    t.index ["cart_id"], name: "index_product_items_on_cart_id"
+    t.index ["product_id"], name: "index_product_items_on_product_id"
+>>>>>>> parent of 2ee226e... Revert "added product relationships with product items"
   end
 
   create_table "products", force: :cascade do |t|
