@@ -19,6 +19,8 @@ gem 'jbuilder', '~> 2.5'
 gem 'bootstrap-sass'
 gem "font-awesome-rails"
 gem "paperclip", git: "git://github.com/thoughtbot/paperclip.git"
+gem 'activeadmin'
+gem 'devise'
 
 group :development, :test do
   gem 'byebug', platforms: [:mri, :mingw, :x64_mingw]
