@@ -18,6 +18,7 @@ gem 'jbuilder', '~> 2.5'
 #added by me
 gem 'bootstrap-sass'
 gem "font-awesome-rails"
+gem "paperclip", git: "git://github.com/thoughtbot/paperclip.git"
 
 group :development, :test do
   gem 'byebug', platforms: [:mri, :mingw, :x64_mingw]
