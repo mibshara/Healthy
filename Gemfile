@@ -17,6 +17,7 @@ gem 'jbuilder', '~> 2.5'
 
 #added by me
 gem 'bootstrap-sass'
+gem "font-awesome-rails"
 
 group :development, :test do
   gem 'byebug', platforms: [:mri, :mingw, :x64_mingw]
